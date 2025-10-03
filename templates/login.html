@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+  <!-- Login Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <form action="/login" method="POST">
+        <h2>Login</h2>
+
+        <div class="input-group">
+            <input type="email" id="loginEmail" name="email" placeholder=" " required>
+            <label for="loginEmail">Email</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="loginPassword" name="password" placeholder=" " required>
+            <label for="loginPassword">Password</label>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
+
