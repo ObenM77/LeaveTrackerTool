@@ -80,7 +80,7 @@ if "leave_requests" not in st.session_state:
 
 
 # --- Sidebar Navigation ---
-st.sidebar.title("📌 Leave Tracker Tool - Kion")
+st.sidebar.title("📌 Kion Leave Tracker Tool")
 menu = st.sidebar.radio("Menu", ["Dashboard", "Request Leave", "Leave History"])
 
 
@@ -138,3 +138,4 @@ elif menu == "Leave History":
     else:
         st.dataframe(st.session_state.leave_requests, use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
+
